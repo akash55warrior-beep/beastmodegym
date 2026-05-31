@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BEASTMODE Gym</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+}
+
+header{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 8%;
+}
+
+.logo{
+    font-size:2rem;
+    font-weight:800;
+    color:#ff3c00;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+}
+
+.hero{
+    height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    flex-direction:column;
+}
+
+.hero h1{
+    font-size:5rem;
+    font-weight:800;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin:20px 0;
+}
+
+.btn{
+    background:#ff3c00;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#171717;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.instagram{
+    color:#ff3c00;
+    text-decoration:none;
+    font-size:1.2rem;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:black;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+    }
+
+    nav ul{
+        display:none;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+
+<nav>
+<div class="logo">BEASTMODE</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Programs</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<div class="hero">
+<h1>BEASTMODE GYM</h1>
+<p>Train Hard. Stay Strong. Become Unstoppable.</p>
+<a href="#contact" class="btn">Join Today</a>
+</div>
+
+</header>
+
+<section id="about">
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=80">
+
+<div>
+<h3>Built For Champions</h3>
+<br>
+<p>
+At BEASTMODE Gym, we focus on strength,
+fat loss, muscle gain and overall fitness.
+Our mission is to help every member unlock
+their strongest version.
+</p>
+<br>
+<p>
+Modern equipment, motivating atmosphere
+and professional guidance.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="services">
+
+<h2 class="title">Programs</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Weight Loss</h3>
+<p>Burn fat and improve conditioning.</p>
+</div>
+
+<div class="card">
+<h3>Muscle Building</h3>
+<p>Structured hypertrophy programs.</p>
+</div>
+
+<div class="card">
+<h3>Strength Training</h3>
+<p>Powerlifting and strength development.</p>
+</div>
+
+<div class="card">
+<h3>Personal Coaching</h3>
+<p>Customized fitness plans.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1000&q=80">
+
+<img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1000&q=80">
+
+<img src="https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?auto=format&fit=crop&w=1000&q=80">
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<p>Follow us on Instagram</p>
+<br>
+
+<a class="instagram"
+href="https://instagram.com/beastmodegym.01"
+target="_blank">
+@beastmodegym.01
+</a>
+
+</section>
+
+<footer>
+<p>© 2026 BEASTMODE Gym. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
